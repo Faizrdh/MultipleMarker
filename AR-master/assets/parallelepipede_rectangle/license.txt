@@ -1,0 +1,11 @@
+Model Information:
+* title:	Parallélépipède Rectangle
+* source:	https://sketchfab.com/3d-models/parallelepipede-rectangle-4cdf970a315c47e6957ab8f7f05b5e38
+* author:	fmercier (https://sketchfab.com/fmercier)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Parallélépipède Rectangle" (https://sketchfab.com/3d-models/parallelepipede-rectangle-4cdf970a315c47e6957ab8f7f05b5e38) by fmercier (https://sketchfab.com/fmercier) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

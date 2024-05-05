@@ -1,0 +1,123 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- Correcting zooming issue -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- Library untuk VR membangun 3D -->
+    <script src="./js/aframe/aframe.min.js"></script>
+    <!-- Library untuk AR yang melakukan pengenalan marker dan menyematkan kamera-->
+    <script src="./js/arjs/aframe-ar.js"></script>
+    <title>WebAR: Multiple Marker</title>
+    <!-- include text geometry -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded vr-mode-ui="enabled: false" arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;">
+
+        <!-- create assets -->
+        <a-assets timeout="900000">
+            <a-asset-item id="Ball" src="./assets/ball/scene.gltf"></a-asset-item>
+            <a-asset-item id="SoccerBall" src="./assets/soccer_ball/scene.gltf"></a-asset-item>
+            <a-asset-item id="HumanEye" src="./assets/human_eye/scene.gltf"></a-asset-item>
+            <a-asset-item id="Circle" src="./assets/circle/scene.gltf"></a-asset-item>
+            <a-asset-item id="ball" src="./assets/ball/scene.gltf"></a-asset-item>
+            <a-asset-item id="interlockingCircle" src="./assets/interlocking_circles/scene.gltf"></a-asset-item>
+            <a-asset-item id="SmallTriangle" src="./assets/simple_small_triangle/scene.gltf"></a-asset-item>
+            <a-asset-item id="cube" src="./assets/cube/scene.gltf"></a-asset-item>
+            <a-asset-item id="grass" src="./assets/minecraft_grass_block/scene.gltf"></a-asset-item>
+            <a-asset-item id="Rock" src="./assets/block_rock/scene.gltf"></a-asset-item>
+        </a-assets>
+        <!-- handle unknown marker -->
+        <a-marker type="unknown">
+            <a-box depth="1" height="1" width="1" position="0 0.5 0" material="opacity: 0.5; side:double; color:purple;"></a-box>
+        </a-marker>
+
+        handle hiro marker
+        <a-marker preset="hiro">
+            <a-entity gltf-model="#drone" animation-mixer></a-entity>
+        </a-marker>
+
+        <!-- handle kanji marker -->
+        <a-marker preset="kanji">
+            <a-entity gltf-model="#cookie"></a-entity>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="0">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="green">
+                <a-gltf-model src="#Ball" rotation="90 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="1">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="green">
+                <a-gltf-model src="#SoccerBall" rotation="90 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="2">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="green">
+                <a-gltf-model src="#HumanEye" rotation="90 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="3">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white">
+                <a-gltf-model src="#circle" rotation="0 0 0" position="0 0 0" scale="0 0 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="4">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
+                <a-gltf-model src="#ball" rotation="90 0 0" position="0 -0.2 1" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="5">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
+                <a-gltf-model src="#interlockingCircle" rotation="90 0 0" position="0 -0.2 1" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="6">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
+                <a-gltf-model src="#SmallTriangle" rotation="90 0 0" position="0 -0.2 1" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="7">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
+                <a-gltf-model src="#cube" rotation="90 0 0" position="-3.2 0 0" scale="0.05 0.05 0.05"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="8">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
+                <a-gltf-model src="#grass" rotation="90 0 0" position="0 -0.2 1" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+        <a-marker type="barcode" value="9">
+            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
+                <a-gltf-model src="#Rock" rotation="90 0 0" position="0 -0.2 1" scale="0.5 0.5 0.5"></a-gltf-model>
+            </a-plane>
+        </a-marker>
+
+        <!-- add a simple camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Circle
+* source:	https://sketchfab.com/3d-models/circle-bd8de3ce9ff8408780bab8f2358dcd1b
+* author:	shenmi (https://sketchfab.com/shenmi)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Circle" (https://sketchfab.com/3d-models/circle-bd8de3ce9ff8408780bab8f2358dcd1b) by shenmi (https://sketchfab.com/shenmi) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

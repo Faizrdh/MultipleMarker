@@ -1,0 +1,11 @@
+Model Information:
+* title:	simple small triangle
+* source:	https://sketchfab.com/3d-models/simple-small-triangle-e8ba296888b34f4881622844635bba41
+* author:	𝔼ℕ𝔼𝔸 𝕃𝔼 𝔽𝕆ℕ𝕊 (https://sketchfab.com/enealefons)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "simple small triangle" (https://sketchfab.com/3d-models/simple-small-triangle-e8ba296888b34f4881622844635bba41) by 𝔼ℕ𝔼𝔸 𝕃𝔼 𝔽𝕆ℕ𝕊 (https://sketchfab.com/enealefons) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
